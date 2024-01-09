@@ -7,150 +7,113 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    body {
-      padding-top: 70px;
-      /* Navbar'ın içeriğin üzerine gelmesini önler */
-      background-color: #f8f9fa;
-      /* Sayfa arkaplan rengi */
-      color: rgb(55, 187, 53);
-      /* Sayfa metin rengi */
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+        body {
+            padding-top: 70px;
+            background-color: #f8f9fa;
+            color: rgb(55, 187, 53);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
 
-    .navbar {
-      background-color: #ffffff;
-      /* Navbar arkaplan rengi */
-      box-shadow: 0 4px 2px -2px gray;
-      /* Hafif bir gölge efekti */
-    }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 2px -2px gray;
+        }
 
-    .navbar-brand {
-      font-weight: bold;
-      color: #16d132;
-      /* Link rengi */
-    }
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+        }
 
-    h7 {
-      font-size: 18px;
-      /* Set the font size for h7 */
-      font-weight: bold;
-      /* Make h7 text bold */
-    }
+        h7 {
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-    h5 {
-      font-weight: bold;
-      /* Make h7 text bold */
-    }
+        h5 {
+            font-weight: bold;
+        }
 
-    p {
-      color: black;
-      /* Set the text color of p to black */
-    }
+        p {
+            color: black;
+        }
 
 
-    .navbar-toggler-icon {
-      border-color: #1a9962;
-      /* Toggle icon rengi */
-    }
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+        }
 
-    .navbar-nav .nav-link {
-      color: rgb(55, 76, 57);
-      /* Navbar link rengi */
-      transition: color 0.3s;
-      /* Renk değişimini yumuşatma */
-      margin-right: 20px;
-      /* Seçenekler arasındaki boşluğu ayarlar */
-    }
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            transition: color 0.3s;
+            margin-right: 20px;
+        }
 
-    .navbar-nav .nav-link:hover {
-      color: #2ae151;
-      /* Linkin üzerine gelindiğinde renk değişimi */
-    }
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+        }
 
-    .container {
-      background-color: #ffffff;
-      /* İçerik kutusu arkaplan rengi */
-      border-radius: 10px;
-      /* İçerik kutusu köşe yuvarlama */
-      padding: 20px;
-      /* İçerik kutusu iç boşluk */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      /* Hafif bir gölge efekti */
-    }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    h4 {
-      font-style: italic;
-      margin-bottom: 15px;
-      /* Başlık arasındaki boşluğu ayarlar */
-    }
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
 
-    h2 {
-      font-style: italic;
-      font-weight: bold;
-      color: #1a9962;
-      font-family: 'Times New Roman', Times, serif;
-
-    }
-
-    img {
-      width: 100%;
-      /* Resmi container genişliğine sığdırmak */
-      margin: 20px 0;
-      /* Üst ve alt boşluk */
-    }
+        img {
+            width: 100%;
+            margin: 20px 0;
+        }
 
 
-    .form-container {
-      max-width: 400px;
-      /* Formun maksimum genişliği */
-      margin: auto;
-      /* Ortalanmış form */
-      background-color: #ffffff;
-      /* Form arkaplan rengi */
-      border-radius: 10px;
-      /* Form köşe yuvarlama */
-      padding: 20px;
-      /* Form iç boşluk */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      /* Hafif bir gölge efekti */
-      margin-top: 20px;
-      /* Formdan önceki boşluk */
-    }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
 
-    .form-message {
-      font-weight: bold;
-      color: green;
-      margin-top: 10px;
-    }
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
 
-    .custom-btn {
-      background-color: #2ae151;
-      /* Green color for the button */
-      border-color: #2ae151;
-      /* Border color */
-    }
+        .custom-btn {
+            background-color: #2ae151;
+            border-color: #2ae151;
+        }
 
-    footer {
-      color: white;
-      padding: 10px;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      /* Flexbox kullanarak içerikleri yan yana yerleştir */
-      justify-content: space-between;
-      /* Aralarında boşluk bırakarak iki container'ı hizala */
-    }
+        h2 {
+          font-style: italic;
+          font-weight: bold;
+          color: #1a9962;
+          font-family: 'Times New Roman', Times, serif;
 
+        }
 
-    /* Sağa dayalı metin stilini uygula */
-    footer h5,
-    footer p {
-      text-align: left;
-      margin: 5px 0;
-      /* İki satır arasındaki boşluğu ayarla */
-    }
-  </style>
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
 
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+        }
+    </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 

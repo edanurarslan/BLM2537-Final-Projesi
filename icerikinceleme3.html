@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">İçerik Adı(INCI)</th>
+                    <th scope="col">İçerik Adı(TR)</th>
+                    <th scope="col">Nedir, Ne İşe Yarar?</th>
+                    <th scope="col">Sağlık Puanı</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Aloe Barbadensis Leaf Juice Powder</th>
+                    <td>Aloe Barbadensis Yaprağı Suyu Tozu</td>
+                    <td>Aloe Barbadensis Leaf Juice Powder, Aloe vera bitkisinin yapraklarından elde edilen toz halidir.
+                        Bu toz, cildi nemlendirir ve rahatlatır, yanı sıra yaralanmaları iyileştirmeye yardımcı olur.
+                        Aynı zamanda cildi temizler ve cildin doğal pH dengesini koruya yardımcı olur.
+                        Aloe Barbadensis Leaf Juice Powder, cildi nemlendirir, rahatlatır ve yaralanmaları iyileştirmeye
+                        yardımcı olur. Aynı zamanda cildi temizler ve cildin doğal pH dengesini koruya yardımcı olur.
+                        Aloe vera jölesi, cildin nem seviyesini arttırır ve cildi yatıştırır. Bu nedenle, cildin
+                        kuruluğunu azaltır ve cildi yumuşatır. aynı zamanda yaralanmaları iyileştirir ve cildi temizler.
+                        Bu nedenle, cildin parlaklığını arttırır ve cildin genel görünümünü iyileştirir. Ayrıca, Aloe
+                        vera jölesi içeriği, cildi nemlendirirken, aynı zamanda cildin doğal pH dengesini korur ve
+                        cildin yapısını düzenler. Bu nedenle, cildin genel sağlığını iyileştirir ve cildin daha parlak
+                        ve sağlıklı görünmesini sağlar.</td>
+                    <td>İYİ</td>
+                </tr>
+                <tr>
+                    <th>Alumina</th>
+                    <td>Alüminyum Oksit</td>
+                    <td>Alumina (Al2O3), alüminyum oksit olarak bilinir ve büyük ölçüde doğal olarak boksit, kristobalit
+                        ve diaspore gibi mineraller içinde bulunur. İlk olarak, boksit ya da diğer alüminyum
+                        mineralleri, ilk olarak çok yüksek sıcaklıklarda yanıtlar, alüminyum oksit elde edilir. Daha
+                        sonra, Alumina, uygun koşullarda sertleştirilir ve aşındırılabilir hale getirilir.
+                        Alumina, cilt bakımında, cildin temizlenmesine yardımcı olarak kullanılabilir. Ayrıca, cildi
+                        tahriş etmeden cildi temizler ve cildin parlaklığını arttırır.
+                        Alumina, kozmetik ve kişisel bakım ürünlerinde, çeşitli formülasyonlarda kullanılabilir.
+                        Örneğin, cildi temizlemek için kullanılabilir. Alumina, jeller, losyonlar, sabunlar ve diğer
+                        cilt temizleme ürünlerinde bulunabilir.
+                        Ayrıca, Alumina, cildi parlatmak için kullanılabilir. Bu, cildi yumuşatır ve cildin parlaklığını
+                        arttırır. Alumina, cilt bakım ürünlerinde, cilt parlatıcılar, cilt losyonları ve cilt jelleri
+                        gibi ürünlerde bulunabilir.</td>
+                    <td>ORTA</td>
+                </tr>
+                <tr>
+                    <th>Aqua</th>
+                    <td>Su</td>
+                    <td>Aqua, su olarak bilinir ve çeşitli kozmetik ve kişisel bakım ürünlerinin formülasyonlarında
+                        yaygın olarak kullanılır. Su, ürünlerin yoğunluğunu azaltmak için kullanılır ve ayrıca ürünlerin
+                        konsistansını düzenlemek için de kullanılır. Su, aynı zamanda ürünlerin uygulanmasını ve
+                        temizlenmesini kolaylaştırmak için de kullanılır.
+                        Su, cildi nemlendirmek, cildin esnekliğini korumak ve cildin sağlıklı görünmesini sağlamak için
+                        kozmetik ve cilt bakım ürünlerinde kullanılır. Su, birçok kozmetik ve kişisel bakım ürünün temel
+                        bileşenidir ve genellikle formülasyonların en yüksek oranında bulunur.
+                        Aqua, cildin nem seviyesini düzenleme, cildin esnekliğini korumak ve cildin sağlıklı görünmesini
+                        sağlamak için kullanılır. Su, ciltteki yağ ve sebumun dengesini korur, cildi temizler ve cildin
+                        doğal pH dengesini korur.
+                        Aqua, her yaştaki insanlar tarafından kullanılabilir ve genellikle yan etkisi yoktur. Ancak bazı
+                        durumlarda, özellikle de suya hassas olan kişiler için, cildin tahriş olması veya alerjik
+                        reaksiyonlar oluşabilir. Bu nedenle, cilt tipiniz veya hassasiyetiniz varsa, öncelikle ürünü
+                        test etmeniz önerilir.
+                        Kozmetik ve kişisel bakım ürünlerinde su, çeşitli formlarda bulunabilir, örneğin kremler,
+                        losyonlar, şampuanlar, sabunlar, jeller, vb. Aqua, yaygın olarak kullanılan bir malzemedir ve
+                        çeşitli ürünlerde kullanılabilir.
+                        Aqua, kozmetik ve kişisel bakım ürünlerinin formülasyonlarında kullanılırken, genellikle
+                        ürünlerin diğer malzemelerinin çözünürlüğünü arttırmak için kullanılır. Ürünlerin konsistansını
+                        düzenlemek için de kullanılır.</td>
+                    <td>İYİ</td>
+                </tr>
+                <tr>
+                    <th>Argania Spinosa Kernel Oil</th>
+                    <td>Argan Çekirdeği Yağı</td>
+                    <td>Argania spinosa kernel oil, Argan yağı olarak da bilinir ve Argan ağacının meyvelerinden elde
+                        edilen bir yağdır. Ana vatanı Fas olan bu ham madde, Türkçe’de Argan Yağı olarak adlandırılır.
+
+                        Kozmetik ve kişisel bakım ürün formülasyonlarında, Argan yağı genellikle yüz ve vücut bakımı
+                        için kullanılır. Argan yağı, cildi nemlendirmek, cildin esnekliğini korumak, cildin sağlıklı
+                        görünmesini sağlamak, cildi koruma ve cildi yenileyici etkisi ile öne çıkar. Aynı zamanda saç ve
+                        tırnaklar için de yararlıdır. Argan yağı, cildi nemlendirirken, cildin doğal yağ dengesini
+                        korur. Cildi yenileyici etkisi ile cildin genç görünmesini sağlar ve cildin esnekliğini korur.
+
+                        Argan yağı cildi nemlendirir, yatıştırır ve cildi yumuşatır. Ayrıca, cildi anti-aging etkisi
+                        olarak korur ve cildin elastikiyetini arttırır. Her cilt tipi için uygun olan Argan yağı,
+                        özellikle kurumaya eğilimli ciltler için faydalıdır. Ancak, Argan yağının herkese uygun
+                        olabileceği unutulmamalıdır.
+
+                        Kozmetik ve kişisel bakım ürünlerinde, cilt bakımı ürünleri, saç bakımı ürünleri, vücut bakım
+                        ürünleri, sabunlar gibi çeşitli ürünlerde bulunur.
+
+                        Argan yağı genellikle iyi tolere edilir ve yan etkisi yoktur. Ancak bazı kişilerde cildi
+                        yatıştıran etkisi nedeniyle biraz yanma veya kaşıntı hissi oluşabilir. Bu durumda, Argan yağının
+                        kullanımı durdurulmalıdır.
+                        Argan yağı, doğal bir üründür ve çevreye ve sağlığa zararlı bir etkisi yoktur. Fas’ta Argan
+                        ağacının yetiştirilmesi, çevre ve ekonomi için faydalıdır ve aynı zamanda Argan yağının
+                        sürdürülebilir bir şekilde elde edilmesine olanak sağlar.</td>
+                    <td>İYİ</td>
+                </tr>
+                <tr>
+                    <th scope="row">Avena Sativa Kernel Flour</th>
+                    <td>Beyaz Yulaf Çekirdek Unu</td>
+                    <td>Avena sativa kernel flour, otsu unu olarak da bilinir. Bu un, yulaf ekiliğinin kabuklarından
+                        elde edilir. Yulaf genellikle Avrupa, Asya ve Amerika&#39;da yetiştirilir. Bu un cildin nem
+                        seviyesini arttırmak ve cildin yumuşak olmasını sağlamak için kullanılır. Aynı zamanda, cildi
+                        rahatlatır ve cildin sağlığını arttırır.
+                        Kozmetik ve kişisel bakım ürünlerinde, genellikle cilt bakım ürünleri, sabunlar, vücut
+                        losyonları gibi ürünlerde bulunur.
+                        Kozmetik ve kişisel bakım ürünleri formülasyonlarında, Avena sativa kernel flour genellikle
+                        cildin nem seviyesini arttırmak ve cildin yumuşak olmasını sağlamak için kullanılır. Aynı
+                        zamanda, cildi rahatlatır ve cildin sağlığını arttırır. Bu un genellikle cildin nem seviyesini
+                        arttırmak için kullanılır ve cildin yumuşak olmasını sağlar. Ayrıca, cildi yatıştırmak için
+                        kullanılabilir.</td>
+                    <td>İYİ</td>
+                </tr>
+                <tr>
+                    <th scope="row">Benzyl Alcohol</th>
+                    <td>Benzil Alkol</td>
+                    <td>Benzil alkol, hafif aromatik bir kokuya sahip renksiz bir sıvıdır. Şeftali, kayısı, elma, üzüm
+                        ve kızılcık gibi birçok meyvede ve çaylarda doğal olarak bulunan organik bir alkoldür. Hem
+                        antibakteriyel hem de antifungal özelliklere sahip olduğu için koruyucu olarak kullanılır.
+                        Ayrıca kozmetik ve cilt bakım ürünlerinde kokuyu ve dokusal hissi iyileştirir.</td>
+                    <td>ORTA</td>
+                </tr>
+                <tr>
+                    <th scope="row">Benzyl Salicylate</th>
+                    <td>Benzil Salisilat</td>
+                    <td>Benzyl salicylate, cildi yatıştırmak, nemlendirmek ve rahatlatmak için kullanılan bir bileşen
+                        olarak kozmetik ve cilt bakım ürünlerinde yaygın olarak kullanılır. Bu maddeden yapılmış
+                        kremler, losyonlar, jeller ve diğer ürünler cildi hassas olan kişiler için de uygun olabilir.
+                        Benzyl salicylate, anti-inflamatuar özellikleri sayesinde cildin kızarıklık ve çekilmelerini
+                        azaltmaya yardımcı olabilir. Ayrıca, cildin nem seviyesini arttırmak için de kullanılabilir. Bu,
+                        cildin daha pürüzsüz, parlak ve sağlıklı görünmesini sağlar.
+                        Benzyl salicylate, cildin UV ışınlarına maruz kaldığında oluşan hassasiyeti azaltmak için de
+                        kullanılabilir. Bu, cildi güneş ışığına daha dayanıklı hale getirir ve cildin yaşlanmasını
+                        yavaşlatır.
+                        Benzyl salicylate, cildin yapısını koruyan ve onarıcı özellikleri sayesinde cildin doğal
+                        yapısını korur ve cildin sağlıklı görünmesini sağlar. Bu nedenle, cildinizin güzelleşmesi için
+                        benzyl salicylate içeren kozmetik ve cilt bakım ürünlerini deneyebilirsiniz.</td>
+                    <td>ORTA</td>
+                </tr>
+                <tr>
+                    <th scope="row">Calendula Officinalis Flower Oil</th>
+                    <td>Aynısefa Çiçek Yağı</td>
+                    <td>Calendula Officinalis Çiçek Yağı, kadife çiçeğinden elde edilir ve iyileştirici özellikleri
+                        nedeniyle yüzyıllardır geleneksel tıpta kullanılmaktadır. Antiinflamatuar, antifungal ve
+                        antioksidan özellikleri nedeniyle artık kozmetik ve güzellik endüstrisinde yaygın olarak
+                        kullanılmaktadır. Yağ açık sarı ila turuncu renktedir ve hafif tatlı ve keskin bir aromaya
+                        sahiptir.
+                        Calendula Officinalis Çiçek Yağı&#39;nın kozmetik ve güzellik endüstrisinde kullanılabileceği
+                        bazı yollar şunlardır:
+                        1. Nemlendirici: Calendula yağı, cildi nemlendirme ve nemlendirme özelliğiyle bilinir, bu da onu
+                        losyonlara, kremlere ve diğer nemlendirici ürünlere harika bir katkı yapar.
+                        2. Akne tedavisi: Yağın anti-enflamatuar ve antifungal özellikleri, akne görünümünü azaltmaya
+                        yardımcı olabilir ve bu da onu akne ile savaşan cilt bakım ürünlerinde popüler bir bileşen
+                        haline getirir.
+                        3. Güneş yanığı rahatlaması: Aynısefa yağı, güneş yanığı olan ciltte rahatlama sağlayabilir. Ek
+                        bir yatıştırıcı etki için aloe vera jeline veya diğer güneş yanığı giderici ürünlere
+                        eklenebilir.
+                        4. İyileştirme özellikleri: Calendula yağı geleneksel olarak kesikleri, sıyrıkları ve yanıkları
+                        iyileştirmek için kullanılmıştır. Ayrıca yara izlerinin ve çatlak izlerinin görünümünü azaltmak
+                        için de kullanılabilir.
+                        5. Saç bakımı: Aynısefa yağı, saçınızın sağlığını ve parlaklığını iyileştirmek için saç kremi
+                        olarak kullanılabilir.
+                        6. Bebek bakımı: Aynısefa yağı bebeklerde kullanım için güvenlidir, bu da onu bebek
+                        losyonlarında, kremlerinde ve pişik merhemlerinde popüler bir bileşen yapar.
+                        Calendula Officinalis Çiçek Yağı&#39;nın belirli kişilerde cilt tahrişine neden olabileceğini
+                        not etmek önemlidir, herhangi bir üründe ana bileşen olarak kullanmadan önce yama testi yapmak
+                        her zaman en iyisidir.</td>
+                    <td>İYİ</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ceramide NG</th>
+                    <td>Seramid NG</td>
+                    <td>Önceden INCI Adı Ceramide 2 altında bilinen Ceramide NG, normal doymuş veya doymamış bir yağ
+                        asidine bağlı D-eritro yapısına sahip Sfinganin&#39;den oluşan N-asile edilmiş sfingolipiddir.
+                        Sfingosin veya dihidrosfingosin (sfinganin) içeren sfingolipidleri içeren daha geniş Ceramide 2
+                        tanımının aksine, Ceramide NG, sfinganin bazlı seramidlerle sınırlıdır.
+
+                        Deri hücrelerimiz arasındaki bağlayıcı maddeye, esas olarak lipitlerden oluşan hücre dışı matris
+                        denir. Seramidler ise bu lipidlerin yaklaşık %50&#39;sini oluşturur (diğer önemli olanlar %25
+                        ile kolesterol ve %15 ile yağ asitleridir.
+
+                        Seramid NG cildin üst tabakasında doğal olarak bulunabilen 9 çeşit seramidden biri. Cilt
+                        bariyerine oluşturmakta ve cildi nemli tutmada çok önemli bir rol oynar .
+                        Sağlıklı cilt yaklaşık %50 seramidlerden oluşur. Azalan seramid seviyeleri, daha zayıf bariyer
+                        gücüne yol açarak cildi dış stres faktörlerine ve dehidrasyona karşı daha savunmasız hale
+                        getirir.
+                        Seramid içeren formülasyonların kullanımı bu etkiyi tersine çevirerek cildin elastikiyetini ve
+                        bariyerini güçlendirir.</td>
+                    <td>İYİ</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cetyl Alcohol</th>
+                    <td>Setil Alkol</td>
+                    <td>Cildi yumuşatmaya yardımcı olur. Kozmetik ürünlerin kıvamını ayarlamak için kullanılır. Saçı
+                        yumuşatmaya ve taranmasının kolaylaşmasına yardımcı olur.</td>
+                    <td>İYİ</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- Kartlar burada gelir -->
+
+                <!-- Sayfa içeriği eklenecek -->
+
+                <!-- Sayfalama (Pagination) -->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <!-- Previous button -->
+                        <li class="page-item">
+                            <a class="page-link" href="icerikinceleme2.html" tabindex="-1">Previous</a>
+                        </li>
+
+                        <li class="page-item"><a class="page-link" href="icerikinceleme.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="icerikinceleme2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="icerikinceleme3.html">3</a></li>
+
+
+
+
+                        <!-- Next button -->
+                        <li class="page-item">
+                            <a class="page-link" href="icerikinceleme3.html">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="resimler/alerjen.png" width="50" height="400">
+        <h1>Kozmetik Ürünlerde Alerjenlerden Kaçınmak İçin Neler Yapılabilir? </h1>
+        <br><br>
+        <p>
+            Alerji Nedir?
+            Kozmetik ve cilt bakım ürünlerinin (sabun, şampuan, saç boyası, parfüm, nemlendirici vb.) içeriğinde
+            kullanılan maddeler bazı kişilerde alerjik reaksiyonlara neden olabilir. Alerji, her yaşta birden bire
+            gelişebildiği gibi her insanda gelişmek zorunda değildir. Alerjik reaksiyonlar, bağışıklık sisteminin
+            zararsız olabilecek maddelere karşı tepki göstermesidir. Bir alerjen, vücutta alerji semptomlarının
+            oluşmasına neden olan antikorlar gibi kimyasal maddeleri serbest bırakmak için bağışıklık sistemini
+            tetikleyebilir. Birçok insan, çiçek açan bitkilerden gelen polenlerin neden olduğu mevsimsel alerjilere veya
+            gıda alerjilerine aşinadır. Kozmetiklere karşı alerjik reaksiyonlar çoğunlukla ciltte kaşıntılı, kırmızı
+            döküntüler veya kontakt dermatit olarak ortaya çıkar.
+
+            Koku ve tat maddeleri; karakteristik, genellikle hoş kokulara sahip organik bileşiklerdir. Kozmetik
+            ürünlerinde genellikle parfümlerde ve parfüm içeren kozmetik ürünlerde kullanılır. Ayrıca deterjanlarda,
+            kumaş yumuşatıcılarda ve diğer ev ürünlerinin içindeki ham maddelerden gelebilecek kötü kokuları maskelemek
+            amacıyla da kullanılırlar. Ek olarak aromaterapide ve bitkisel ürünlerde de kullanılırlar. Tatlandırıcı
+            maddeler; yiyecek, içecek ve dişçilik ürünlerinde kullanılmaktadır.
+
+            Koku bileşenlerine karşı temas alerjisi, bir kişi cilt üzerinde yeterli derecede kokuyla temas eden
+            alerjenlere maruz kaldığında ortaya çıkar. Kişilerde temas alerjisi geliştiğinde, bağışıklık sistemi
+            tarafından tepki olarak oluşturulan ve alerjeni tanıyabilen hücreler üretilir. Yani koku alerjenlerine
+            tekrar maruz kalındığında bu hücreler aktifleşerek alerjenleri tanıyarak semptomlar geliştirir. Deri
+            rahatsızlıklarının ilerlemesiyle beraber meydana gelen şişlikler gibi belirtilerin ardından alerjene
+            maruziyet devam ederse, cilt üzerinde pullanma veya ağrılı çatlaklar gibi durumlar gelişebilir.
+
+            <br><br>Kozmetik Ürünlerde Bulunan Ana Alerjenler <br><br>
+            FDA (U.S Food and Drug Administration- Amerikan Gıda ve İlaç Dairesi), bazı kozmetik ürünlerde bulunan
+            yaygın alerjenlerin listesini derlemiştir. Bu alerjenler, kozmetik ürünlerin içinde bulunan ve kozmetik
+            ürünlerin kullanımından kaynaklanıp çoğu alerjik bir reaksiyona neden olan alerjenlerdir.
+
+            Yaygın alerjenler beş ayrı gruba ayrılmaktadır: doğal kauçuk, kokular, boyalar, koruyucular ve metaller.
+            Daha önceki yazımızda Avrupa Birliği tarafından etiketlenmiş, kozmetik ürünlerde bulunan 26 koku
+            alerjeninden bahsetmiştik.
+
+            Tüketiciler Alerjenlerden Kaçınmak İçin Neler Yapabilir?
+            Kozmetik ve cilt bakım ürünlerinde yaygın olarak kullanılan alerjenlerden veya olası alerjenlerden
+            kaçınmanın en iyi yolu vücudunuzun hangi maddeye duyarlı olduğunu ve bundan nasıl kaçınacağınızı bilmektir.
+            Bunun en iyi yolu ise ürünün içerik bölümünü yani “etiket” kısmını iyi okumak ve alerjinizin olduğunu
+            bildiğiniz maddeleri bulunduran maddelerden kaçınmaktır. Bunun yanında alerjiniz olsa da olmasa da bazı
+            ürünler tahrişe neden olabilecek maddeler içerdiğinden, tüketicilerin ürün üzerindeki etiketi okuması ve
+            eğer içerikte yazan maddeleri anlamıyorsa; bu maddeleri araştıran güvenilir bir kaynak kullanıp kullandığı
+            ürünlerin içeriklerini inceleyerek satın alması önemlidir.
+
+            <br><br>Alerji Testleri Nelerdir?<br><br>
+            Tüketicilerin bir alerjene maruz kalıp kalmadığını anlamak için bir reaksiyonun meydana gelmesini
+            beklemesine gerek yoktur. Bir alerjene maruz kalmadan önce test yaptırarak hangi alerjenin bünyenizde
+            reaksiyona neden olabileceğini bilmek, maddelere daha fazla maruz kalmanızı önleyecektir. Bu bağlamda
+            sıklıkla duyulan bir alerjen testi mevcut: Yama testi.
+
+            <br><br>Yama(Patch) Testi Nedir?<br><br>
+            Yama testi, alerjenin cilt üzerinde tetiklediği dermatiti veya cilt tahrişini teşhis etmek amacıyla
+            uygulanır.
+
+
+            <br><br>Yama Testi Nasıl Yapılır?<br><br>
+            Yama testinde, ilk olarak cildin bir bölümüne az miktarda çeşitli alerjen maddeleri yerleştirilir. Daha
+            sonra alerjenlerin bulunduğu cildin üzeri örtülür ve 48 saat örtülmüş şekilde tutulur. Ardından doktor 72
+            veya 96 saat sonra cildi inceleyerek cilt üzerinde herhangi bir kızarıklık gibi alerjik reaksiyon olup
+            olmadığını kontrol edip semptomlar varsa not eder ve hasta bilgilendirilir.
+
+            Eğer hastanın cildi çok hassas ise, yama testi yeterli olmayabilir ve daha spesifik alerjenlere yönelik
+            testler uygulanır.
+
+        </p>
+
+
+    </div>
+
+    <br><br>
+
+
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

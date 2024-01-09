@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="resimler/ahabha.png" width="50" height="400">
+        <h1>AHA BHA Nedir?</h1>
+        <br><br>
+        <p>
+            AHA ve BHA asitleri son zamanlarda pek çok kişi tarafından cilt bakım rutinin bir parçası olarak
+            kullanılıyor. AHA, alfa hidroksi asit; BHA ise beta hidroksi asit anlamına geliyor. Sıklıkla birlikte
+            kullanılan bu iki asit, cildin üst katmanındaki kusurları gidererek pürüzsüz bir görünüm sağlıyor. AHA BHA
+            asitlerinin cilde faydaları birbirini tamamladığından, pek çok üründe birlikte yer alıyorlar. AHA cildin üst
+            tabakasındaki pürüzlerin giderilmesine yardımcı olurken, BHA cildin daha alt katmanlarına etki ediyor. Bu
+            yüzden BHA gözenek temizleme ve sebum dengeleme, AHA ise ciltte yeni oluşmuş leke ve kırışıklıkları azaltma
+            amacıyla tercih ediliyor. Raflarda genelde AHA BHA serum olarak yer alan bu iki asit aşırı hassas ciltler
+            hariç tüm cilt tiplerinde kullanılabiliyor. Kuru ciltliler de yağlı ciltliler de AHA ve BHA asitlerini cilt
+            bakım rutinlerine dahil edebiliyorlar.
+            Cilt bakım ürünlerinin etiketlerine bakanlar “AHA BHA nedir?” sorusunun cevabını merak edebiliyor. Cilt
+            bakım ürünlerine ilgi duyanların yakından tanıdığı birçok asit aslında AHA ve BHA kategorilerinde yer
+            alıyor. Örneğin, antioksidan (hücrelerimizdeki serbest radikal olarak adlandırılan hasar yapıcı molekülleri
+            “temizleyerek” hücre hasarını önlemeye yardımcı olan moleküller) ve eksfoliasyon (ölü cilt hücrelerinin
+            giderilmesi) özellikleriyle öne çıkan laktik asit AHA asitleri arasında, siyah nokta ve sivilcelere iyi
+            gelmesiyle bilinen salisilik asit ise BHA kategorisinin altında bulunuyor. Cilt bakımında asit kullanımı
+            yaygınlaştığı için sıklıkla gördüğümüz AHA ve BHA içeren ürünler genelde krem, tonik ya da serum olarak
+            satın alınabiliyor.
+        </p>
+        <br><br>
+
+        <h2>AHA BHA Ne İşe Yarar?</h2><br><br>
+        <p>
+            Cilt bakımında asitler çoğunlukla peeling ya da leke giderici olarak kullanılıyor. AHA ve BHA da bu amaçla
+            sıklıkla kullanılan asitler arasında yer alıyor. İçeriğinde cilde zarar vermeyecek kadar düşük oranda asit
+            içeren AHA BHA tonik gibi ürünler yaşlanma karşıtı bakımdan, gözenek küçültmeye kadar geniş bir yelpazede
+            kullanılabiliyor. AHA, cildin en üst katmanını soyarak bu katmandaki kusurların giderilmesine yardımcı
+            oluyor. AHA içeren ürünler düzenli kullanımda yeni oluşan lekeleri geçirmede, kırışıklıkları azaltmada ve
+            kolajen oluşumunu desteklemede etkili oluyor. AHA cildi hem pürüzsüzleştiriyor hem de nemlendirici gibi
+            diğer cilt bakım ürünlerinin emilmesine yardımcı oluyor.
+            BHA serum ürünlerinin düzenli kullanımında siyah nokta ve sivilcelerin azaldığı gözlemleniyor. BHA sadece
+            cildin üst katmanını pürüzsüzleştirmeye değil, gözenekleri tıkayan yağı çözmeye ve sebum dengesini sağlamaya
+            yardımcı oluyor. Ciltte yağın birikmesi önlendikten sonra siyah nokta ve akne oluşumunda azalma görülüyor.
+            Dolayısıyla, BHA gözenekleri açmak, gözeneklerin tıkanmasını engellemek ve sivilce oluşumunun önüne geçmek
+            amaçlarıyla tercih ediliyor. Bu iki asit çeşidini aynı anda içeren ürünler hem lekelere hem de cilt
+            kusurlarına iyi geliyor ve pürüzsüz bir cilt görünümüne katkı sağlıyor.
+        </p>
+        <br><br>
+        <h2>AHA BHA Farkları Nelerdir? AHA BHA Serum Nasıl Kullanılır?</h2>
+
+        <br><br>
+        <p>
+            AHA ve BHA hidroksi asitler kategorisinde yer alsalar da birbirlerinden farklı birçok yanları var. AHA ve
+            BHA arasındaki temel fark kimyasal yapıları. AHA grubunda yer alan laktik asit, sitrik asit, malik asit gibi
+            asitler suda çözünen asitler olmasıyla öne çıkıyor. BHA grubunda yer alan salisilik asit, tretokanik asit
+            gibi asitler ise yağda çözünüyor. Dolayısıyla, siyah nokta ve sivilce gibi cilt yağından kaynaklanan
+            sorunların giderilmesinde BHA kategorisinde yer alan asitler daha etkili oluyor. AHA sınıflandırmasındaki
+            asitler ise cildin üst katmanlarını etkiliyor. İnce çizgileri yok etmek, kolajen üretimini artırarak cildin
+            genç bir görünüme kavuşmasını sağlamak, cildi lekelerden arındırmak için tercih ediliyor. AHA ve BHA’yı
+            birlikte içeren ürünler bulunsa da bazı ürünler tek bir asidi içeriyor. Örneğin, siyah noktalara karşı
+            geliştirilen salisilik asit içeren tonik, krem gibi ürünler sadece BHA içerebiliyor. Güneş lekeleri veya
+            kırışıklıklara karşı sadece AHA içeren ürünler bulunuyor.
+            “AHA BHA serum nasıl kullanılır?” cevabı merak edilen sorular arasında yer alıyor. Serumlar cilt
+            temizlendikten hemen sonra kullanılıyor. Temiz bir cilde uygulandığında daha iyi etki gösteren AHA BHA asit
+            içeren serumlar, cilt bakımının ikinci aşamasında yüze masaj yaparak uygulanabiliyor. AHA ürünleri ve BHA
+            ürünleri cildi hassaslaştırabileceğinden AHA BHA serumun gece kullanılması öneriliyor. Bu asitler gündüz
+            kullanılacaksa, leke oluşumunu engellemek için güneş koruyucu ile kullanılması tavsiye ediliyor.
+            AHA ve BHA İçeren Ürünler Nelerdir?
+            Laktik asit, salisilik asit gibi cilt bakımında sıklıkla kullanılan asitler AHA ve BHA kategorisinde en sık
+            kullanılan içerikler arasında yer alıyor. AHA BHA; tonik, serum, krem, cilt temizleyici gibi farklı
+            ürünlerin içeriğinde yer alabiliyor. Kullanıcıların ilk tercihlerinden biri serum formundaki ürünler oluyor.
+            Cilt lekelerini gidermeyi vadeden ürünlerde AHA, siyah nokta ve sivilceleri gidermeyi vadeden ürünlerde BHA
+            tercih ediliyor. AHA BHA peeling de bu kategoride sık tercih edilen ürün çeşitleri arasında yer alıyor.
+            Kullanım tercihlerine bağlı olarak tonik, peeling, serum, krem ya da temizleyici formundaki ürünlerden
+            birine yönelip cilt bakım rutinine AHA BHA ürünlerini dahil etmek mümkün oluyor. Cilt bakım rutinine birden
+            fazla sayıda asit içeren ürün eklenmesi önerilmiyor. AHA BHA asit içeren ürünlerin yorumları sitemizdeki
+            ürün inceleme kısmından incelenebiliyor.
+            AHA BHA Her Gün Kullanılır mı?
+            AHA BHA kullanımını günlük bakımın bir parçası haline getirmenin uygun olup olmadığı sıklıkla merak
+            ediliyor. AHA BHA farklı ürünlerde çeşitli oranlarda yer alabiliyor. Cilt bakım rutinine asitleri ilk kez
+            ekleyeceklerin düşük oranda AHA BHA içeren ürünler kullanması gerekiyor. Asit ürünleri ilk kez
+            kullanılıyorsa iki ya da üç gün aralıklarla kullanılması cildin hassasiyet göstermesini engellemeye yardımcı
+            oluyor. Cildi asit kullanımına alışık bireylerde bile asit oranı yüksek ürünler cildi yorabileceği için bu
+            tarz ürünlerin her gün kullanılmaması tavsiye ediliyor. Örneğin yüksek asit oranına sahip bir BHA peeling
+            cilt hassasiyetine sebep olmamak için her gün kullanılmaması gereken ürünler arasında yer alıyor. Öte
+            yandan, düşük yüzdeye sahip AHA BHA serum kullananlar alışma aşamasından sonra serumu ciltlerine her gün
+            uygulayabiliyor. Günlük kullanımda hangi AHA BHA asidi türevinin kullanıldığı da önem kazanıyor. Salisilik
+            asit gibi BHA asitleri yağlı ve hassas olmayan ciltlerin her gün kullanımına uygun oluyor. Laktik asit gibi
+            etkisi daha güçlü olabilen asitler ise düşük çözeltide bile günlük kullanım için önerilmiyor.
+        </p>
+
+
+    </div>
+
+    <br><br>
+
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

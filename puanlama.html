@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <p class="ms-3 mb-0 ecoblue font14 lato w400"><i class="far fa-chevron-right mb-0 me-3 text-truncate"></i>Puanlama
+        Sistemi</p>
+
+
+    <div class="container">
+        <div class="row px-3 mb-3 mb-md-4">
+            <div class="col-12 aboutus-bg py-5">
+                <div class="row position-relative px-0 overflow-hidden">
+                    <div class="col-11 col-md-10 mx-auto position-relative z-index-2">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-column align-items-start justify-content-start">
+                                <h1 class="canela font50 ecoblue mb-4">Puanlama Sistemimiz</h1>
+                                <h3 class="canela font16 ecoblue mb-4">Hammadde Sağlık Puanı Hesaplaması</h3>
+                                <p class="lato font16 w400 ecoblue mb-3">Ürünlerin içinde yer alan ham maddelerinin
+                                    her biri aşağıdaki kriterlere göre incelenmektedir:</p>
+                                <p class="lato font16 w400 ecoblue mb-2">1. Ürün içinde kullanılan ham maddelerin
+                                    üretildiği kaynak ve üretim süreci (doğal, yarı sentetik, sentetik)</p>
+                                <p class="lato font16 w400 ecoblue mb-2">2. Alerji/irritasyon etkisi</p>
+                                <p class="lato font16 w400 ecoblue mb-2">3. Üreme/endokrin/organ etkisi</p>
+                                <p class="lato font16 w400 ecoblue mb-2">4. Kanserojen etkisi</p>
+                                <p class="lato font16 w400 ecoblue mb-3">5. Kullanım kısıtı</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Bu inceleme sonucunda oluşan ham madde
+                                    sağlık puanları, kullanım aralığı bilgisine göre sınıflandırılmaktadır.</p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div
+                                class="col-10 mx-auto col-lg-3 mx-lg-0 d-flex flex-column align-items-center justify-content-start">
+                                <div class="w-100 rounded d-flex align-items-center justify-content-center lato text-light font30 w700 mb-3 py-3"
+                                    style="background-color: #3879f1;">0 - 4.99</div>
+                                <p class="lato w400 text-dark font20">Düşük</p>
+                            </div>
+                            <div
+                                class="col-10 mx-auto col-lg-3 mx-lg-0 d-flex flex-column align-items-center justify-content-start">
+                                <div class="w-100 rounded d-flex align-items-center justify-content-center lato text-light font30 w700 mb-3 py-3"
+                                    style="background-color: #3879f1;">5 - 7.99</div>
+                                <p class="lato w400 text-dark font20">Orta</p>
+                            </div>
+                            <div
+                                class="col-10 mx-auto col-lg-3 mx-lg-0 d-flex flex-column align-items-center justify-content-start">
+                                <div class="w-100 rounded d-flex align-items-center justify-content-center lato text-light font30 w700 mb-3 py-3"
+                                    style="background-color: #3879f1;">8 - 10</div>
+                                <p class="lato w400 text-dark font20">İyi</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex flex-column align-items-start justify-content-start">
+                                <p class="lato font16 w400 ecoblue mb-2">Riskli Kullanım Aralığı:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Örneğin; bir ham madde 3.8 puan almış ise
+                                    “düşük” olarak değerlendirilmektedir. </p>
+                                <p class="lato font16 w400 ecoblue mb-2">Dikkatli Kullanım Aralığı:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Örneğin; bir ham madde 6.3 puan almış ise
+                                    “orta” olarak değerlendirilmektedir. </p>
+                                <p class="lato font16 w400 ecoblue mb-2">Güvenli Kullanım Aralığı:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Örneğin; bir ham madde 8.7 puan almış ise
+                                    “iyi” olarak değerlendirilmektedir. </p>
+                                <p class="lato font16 w400 ecoblue mb-3">Aynı zamanda ilgili ham maddenin çevreye
+                                    olumlu ya da olumsuz etkisinin olup olmadığı incelenerek, bilgi olarak
+                                    sunulmaktadır.</p>
+                                <p class="lato font16 w700 ecoblue mb-3">Ürün Sağlık Puanı Hesaplaması:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Ürünün etiketinde yer alan “ingredients”
+                                    veya “içindekiler” bölümünde yer alan ham madde bilgileri referans alınmış ve
+                                    yukarıda anlatılan “Ham Madde Sağlık Puanı” kriterlerine göre incelenmiştir.</p>
+                                <p class="lato font16 w400 ecoblue mb-3"><i
+                                        class="fas fa-circle font10 orange me-3"></i>Eda Sağlık Puanlı (Doğrulanmış)
+                                    Ürünler: Ürünün içeriğindeki her bir ham maddenin bilgisi net olarak
+                                    bilindiğinden “Ürün Sağlık Puanı” rozetine sahiptir.</p>
+                                <p class="lato font16 w400 ecoblue mb-3"><i
+                                        class="fas fa-circle font10 orange me-3"></i>Mercek Altındaki Ürünler:
+                                    Ürünün içeriğinde yer alan ham maddelerin hangi versiyonlarının kullanıldığı net
+                                    olarak bilinmediği için “Sağlık Puanı” genel bir bilgi vermesi açısından
+                                    yaklaşık olarak verilmiştir.</p>
+                                <p class="lato font16 w700 ecoblue mb-3">Ürün Çevre Puanı Hesaplaması:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Marka sahibi firmanın hangi ölçekte bir
+                                    firma olduğunu baz alınarak, her bir ürünü aşağıdaki kriterlere göre tek tek
+                                    incelenmektedir:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">1. Hayvanlar üzerinde test</p>
+                                <p class="lato font16 w400 ecoblue mb-3">2. Vegan ürün</p>
+                                <p class="lato font16 w400 ecoblue mb-3">3. Ambalaj geri dönüşüm</p>
+                                <p class="lato font16 w400 ecoblue mb-3">4. Kargo geri dönüşüm</p>
+                                <p class="lato font16 w400 ecoblue mb-3">5. Ham madelerin çevre etkisi</p>
+                                <p class="lato font16 w400 ecoblue mb-3">6. Sertifika/klinik testler</p>
+                                <p class="lato font16 w400 ecoblue mb-3">7. Karbon ayak izi</p>
+                                <p class="lato font16 w400 ecoblue mb-3">8. Su ayak izi</p>
+                                <p class="lato font16 w400 ecoblue mb-3">9. Enerji faaliyetleri</p>
+                                <p class="lato font16 w400 ecoblue mb-3">10. Su faaliyetleri</p>
+                                <p class="lato font16 w400 ecoblue mb-3">11. Marka farkındalık faaliyetleri</p>
+                                <p class="lato font16 w400 ecoblue mb-3">12. Sosyal sorumluluk aktiviteleri</p>
+                                <p class="lato font16 w700 ecoblue mb-3">Puanların Güncellenmesi:</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Senede 1 kez olmak üzere, tüm ham maddeler
+                                    çevre ve sağlık etkilerine göre tekrar incelenmekte ve gerekli görülmesi
+                                    durumunda güncelleme yapılmaktadır.</p>
+                                <p class="lato font16 w400 ecoblue mb-3">Yapılan revizyonlar ve güncellemeler web
+                                    sitesinde
+                                    yayımlanacaktır.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container">
+        <img src="resimler/kırmızıpeel.png" width="50" height="400">
+        <h1>Kırmızı Peeling Nedir?</h1>
+        <br><br>
+        <p>Peeling nedir?” sorusu birçok kişi tarafından sıklıkla sorulur. Peeling fiziksel veya kimyasal olabilen,
+            cildi nazikçe soyarak yenilemeyi amaçlayan bir cilt bakım ürünüdür. Daha özel bir içeriğe sahip olan kırmızı
+            peeling’in amacı ise cilt üzerinde görünen kusurlarla savaşmak ve cilt görünümünü kusursuzlaştırmaktır. Tüm
+            bunları yaparken cildin parlaklık kazanmasına katkı sağlar. Kırmızı peeling’in içerisinde %30 oranında AHA
+            ve %2 oranında BHA bulunur. İçeriğinde bulunan diğer maddeler ise şu şekilde sıralanabilir: Hyaluronik asit,
+            B5 vitamini, siyah havuç ve tazmanya biberi (tasmanian pepperberry).
+
+            Kırmızı peeling, içeriğinde yer alan maddeler sayesinde cildi soyar ve pul pul dökülmesine sebep olur.
+            Böylelikle cilt yenilenmesine katkı sağlayarak leke oluşumunu azaltır ve cilt parlaklığını artırır. Tazmanya
+            biberi asit kaynaklı tahrişlerin minimuma inmesini sağlarken siyah havuç antioksidan görevi görür. B5
+            vitamini sayesinde iyileşme hızlanır ve hyaluronik asit etkisiyle cilt rahatlar. Kırmızı peeling
+            kullananların geri dönüşleri incelendiğinde düzenli kullanım sonucunda ürünün ince çizgilerin kaybolmasına
+            katkı sağladığı gözlemlenmiştir. Aynı zamanda kırmızı peeling kullanımı sağlıklı ve daha sıkı bir cilde
+            sahip olmanın anahtarlarından biridir.
+        </p>
+
+        <br><br>
+
+        <h2>Kırmızı Serum Ne İşe Yarar?</h2><br><br>
+        <p>
+            Kırmızı serum içeriğindeki etkenler sayesinde cildin en üst katmanın soyulmasını sağlar. Soyulan cilt
+            tabakasının altından yeni deri ortaya çıkar. Yeni çıkan deri çok daha pürüzsüz ve genç bir görünüm
+            kazanılmasına destek olur. Kırmızı serum içeriğinde bulunan BHA, cildin pul pul dökülmesiyle beraber
+            gözeneklerin sıkılaşmasında aktif bir rol oynar. İçeriğinde yer alan AHA ise cildin en üst katmanını soyarak
+            daha parlak ve güzel bir görünüm oluşmasına katkı sağlar. “AHA BHA nedir?” diye merak edenler blog
+            sayfamızdaki kapsamlı içerikten hemen yararlanabilir!
+
+            Kırmızı serum kullanımı cilt dokusunu pürüzsüzleştirir, cilde parlaklık verir ve cildin daha güzel
+            gözükmesine sebep olur. Normal, karma ve yağlı cilt tiplerinin tümüne uygulanabilen kırmızı serum ciltte var
+            olan donukluk, leke, akne ve pütürlü yapıyla savaşmak için üretilmiştir. Kırmızı serumun düzenli kullanımı
+            akneye yatkın, sivilce problemi yaşayan, cilt tonu eşitsizliği olan, yenilenmeye ihyacı olan ve tıkanık
+            gözeneklere sahip olan ciltlerde iyileşme sağlar. Kırmızı serum uygulaması esnasında herhangi bir acı
+            hissedilmez. İşlemin uygulandığı bölgede hafif derecede yanma ve batma hissedilmesi oldukça normaldir.
+        </p>
+        <br><br>
+        <h2>Kırmızı Peeling Nasıl Kullanılır? </h2>
+
+        <br><br>
+        <p>
+            Kırmızı peeling, yüksek miktarda asit içerdiği için dikkatli kullanılmalıdır. Kullanımından önce elin
+            üzerinde küçük bir noktada yanma testi yapılmasında fayda vardır. Öncelikle peeling’in test edileceği alan
+            yıkanmalı ve kurutulmalıdır. Ardından ürün ilgili bölgeye sürülüp 10 dakika beklendikten sonra ilgili bölge
+            iyice temizlenmelidir. Test sonucunda sıkıntı görülmezse ürün en fazla haftada 2 kez olacak şekilde cilt
+            bakım rutinine eklenebilir. Test sonrasında bölgede yanma, kızarıklık, kabarma ve kaşıntı gibi belirtiler
+            görülürse ürünün kullanılmaması gerekir. Kırmızı peeling asidik bir yapıya sahip olduğu için bu işlemle
+            beraber cilt soyulmasına sebep olabilecek başka ürünler kesinlikle kullanılmamalıdır. Kırmızı peeling’i
+            uygularken aşağıda listelenen adımlar izlenebilir:
+
+            1. İlk adım olarak cilt güzelce temizledikten sonra iyice kurulanır. Peeling’in kuru cilde uygulanması daha
+            iyi sonuçlar elde edilmesine sebep olur.
+            2. Parmak uçları ile yüz ve boyun bölgesine küçük dokunuşlar yapılarak peeling yedirilir. Bu işlem
+            yapılırken dudak ve göz çevresinden uzak durulmalıdır.
+            3. Peeling ortalama olarak 10 dakika boyunca ciltte bekletilir. Bu süre cilt yapısına göre değişiklik
+            gösterebilir.
+            4. Yeterli süre bekledikten sonra cilt ılık su ile güzelce yıkanır ve temizlenir. Ilık su ile yıkama
+            yapılırken peeling’in göz ve göz çevresine temas etmediğinden emin olmak, dikkatli davranmak gerekir.
+            5. Son aşama olarak cilt uygun bir nemlendirici ile nemlendirilir.
+
+            İşlem kış ayında yapılmış olsa bile, bir hafta süre ile yüksek koruyucu faktörlü güneş kremleri ile cilt
+            güneş ışınlarına karşı koruma altına alınmalıdır. Bahar mevsiminde yapılan işlemlerde cilt mümkün olduğunca
+            güneşten korunmalıdır. Uygulama sonrasında ciltte tahriş meydana gelirse ürün bir daha kullanılmamalıdır.
+            Yaz mevsiminde ise kullanılması önerilmemektedir. Konu ile ilgili doktor ya da uzman tavsiyesi alınmasında
+            fayda vardır.
+        </p>
+        <br><br>
+
+        <h2>Kırmızı Peeling Yazın Kullanılır mı?</h2>
+
+
+        <br><br>
+        <p>
+            Uzmanlar, peeling’lerin yazın kullanılmaması gerektiğini belirtir.
+            Nedeni ise peeling ürünlerinin yapıları gereği cilde sürüldüklerinde cildi tahriş etmesidir. Peeling
+            uygulamasıyla beraber derinin üzerindeki hücreler arasındaki bağ giderek zayıflar ve üst deri tabakası
+            soyulmaya başlar. Ardından üst tabakadaki hücreler dökülür ve yeni deri oluşumu hızlanır. Böylelikle cilt
+            yenilenmiş olur ve bu işlemler cildin güneşe karşı duyarlılığını artırır. Yaz döneminde güneşten korunmak
+            diğer mevsimlere göre çok daha zor olduğu için kırmızı peeling’in yaz aylarında kullanımı tavsiye edilmez.
+            Peeling’in ilkbahar, kış ve sonbahar mevsimlerinde uygulanması tavsiye edilir. Formülünde bulunan alfa
+            hidroksi asit (AHA) ve beta hidroksi asit (BHA) sebebiyle güneş yanığı riskini büyük oranda artırır. Bu
+            sebeple kırmızı peeling kullanırken yüksek faktörlü güneş koruyucu ihmal edilmemelidir. Sadece ürünü
+            kullanırken değil, kullandıktan sonra bir hafta gibi bir süreyle güneş koruyucu kullanılmaya devam
+            edilmelidir.
+        </p>
+
+        <br><br>
+
+        <h2>Red Peeling (Kırmızı Peeling) Kaç Günde Bir Yapılır?</h2>
+
+
+        <br><br>
+        <p>
+            Red peeling yani kırmızı peeling haftada 2 kez olacak şekilde cilt bakım rutinine eklenebilir. Ürün cildin
+            güneşe karşı hassasiyetini artırdığı için uyumadan önce yapılmasında fayda vardır. Bu noktada önemli olan
+            cilt yapısına göre bu sıklığın değişebilmesidir. Hassas ciltlerde kullanım haftada 1’e düşürülebilir.
+            Yukarıda da bahsedildiği üzere peeling’in güneşten korunmak için yaz aylarında yapılmaması önemle tavsiye
+            edilir. Uçuk, açık yara, egzama ve benzeri deri hastalıkları olan ciltlere red peeling uygulanması tavsiye
+            edilmez. Aynı zamanda güneşe karşı ekstra hassas olan, soyulmuş ya da hasar görmüş ciltlerde red peeling
+            uygulaması denenmemelidir.
+        </p>
+
+
+    </div>
+
+    <br><br>
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

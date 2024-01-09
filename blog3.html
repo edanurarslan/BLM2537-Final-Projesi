@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="resimler/losyon.png" width="50" height="400">
+        <h1>Losyon nedir, nasıl kullanılır?</h1>
+        <br><br>
+        <p>
+            Yeterli bakım sağlanmadığında nemini kaybeden ve kuruyan cilt için özel ürünler kullanmak isteyenler,
+            “Losyon nedir?” sorusunun yanıtını arayabilir. Losyon, düşük viskoziteye sahip olan ve cildin nemlenmesini
+            sağlayan bir bakım ürünüdür. Cilt, kış aylarında kalın kıyafetler nedeniyle hava alamadığı, yaz aylarında
+            ise güneş ışınlarına maruz kalınması sebebiyle kuruyabilir. Hassas, yağlı ya da kuru olması fark etmeksizin
+            her cilt tipinde losyon kullanılarak cildin pürüzsüz, yumuşak ve parlak görünmesi sağlanabilir. Çilek,
+            avokado, çikolata, şeftali, kiraz çiçeği, lavanta gibi hoş aromalara sahip olan losyonların etkisi gün boyu
+            devam edebilir.
+        </p>
+
+        <br><br>
+
+        <h2>Vücut Losyonlarının Kremler ve Vücut Sütlerinden Farkı</h2><br><br>
+        <p>
+            Losyon, krem ve vücut sütleri arasındaki temel fark, ürünlerin dokusu ve yoğunluğu ile ilişkilidir.
+            Losyonlar, kolaylıkla dağılan hafif bir yapıya sahipken kremler daha yoğun olduğu için çok akışkan değildir.
+            Cilt üzerinde daha yavaş yayıldığı için genellikle dairesel masaj hareketleri ile uygulanır. Yüz kremleri bu
+            özelliği ile daha çok kış aylarında etkin nemlendirme sağlar. Losyonlar ise hafif yapıları sayesinde sıcak
+            havanın hakim olduğu yaz aylarında kullanıma uygundur. Losyon ve vücut sütü arasındaki fark ise ürünlerin
+            yağ ve su oranı ile ilgilidir. Vücut losyonları yüksek su oranına sahip olduğu için iyi bir nemlendiricidir.
+            Kullanımdan sonra serinletici bir etki gösterir. Vücut sütlerinde ise yağ oranı yüksektir.
+        </p>
+        <br><br>
+        <h2>Losyon Çeşitleri Nelerdir?</h2>
+
+        <br><br>
+        <p>
+            Losyonlar genellikle tüm vücutta kullanılsa da yüz ve eller için farklı şekilde formüle edilebilir.
+            Özellikle sürekli su ile temas eden ve açıkta olan eller kurumaya yatkındır. Nemlendirici losyon çeşitleri,
+            gün boyu kuruyan cilde nem takviyesi yapar. Ayak bakımı sırasında da kullanılan ürünler, yaz aylarında
+            açıkta kalan ayaklar için iyi bir nem kaynağıdır. Manikür ve pedikür işlemleri için özel olarak formüle
+            edilen losyonlar, tırnak çevresindeki sert derinin yumuşamasına yardımcı olur. Losyonların formu da farklı
+            olabilir. Tıpkı krem gibi doğrudan avuç içine alınarak sürülebilir. Sprey şeklinde üretilen losyonlar ise
+            vücutta istenen bölgelere sıkılabilir. Özellikle tüm vücuda uygulanacağı zaman sprey formdaki ürünler
+            kullanım kolaylığı sağlayabilir.
+        </p>
+        <br><br>
+
+        <h2>Vücut Losyonu Seçerken Dikkat Edilmesi Gerekenler</h2>
+
+
+        <br><br>
+        <p>
+            Vücut losyonu seçiminde dikkat edilmesi gereken noktaların başında cilt tipi gelir. Her cilt kozmetik ve
+            kişisel bakım ürünlerinin içeriğinde bulunan maddelere farklı tepki verebilir. Kuru bir cilde sahip olan
+            kişiler cildin nem ihtiyacını karşılamak amacıyla seramid ve shea yağı gibi bileşenlere sahip ürünleri
+            kullanabilir. Yağlı ciltlerin ihtiyacı ise sebum dengesinin düzenlenmesidir. Bu nedenle hyaluronik asit
+            içeren su bazlı ürünlerin kullanımı uygundur. Normal ve karma cilde sahip kişilerin T bölgesi yağlı,
+            yanakları ise kurudur. Bu kişiler jojoba yağı ve aloe vera içerikli losyonlar kullanabilir. Losyonlar genel
+            olarak nemlendirme özelliği ile bilinse de yaşlanma karşıtı içeriği ile öne plana çıkan ürünler de bulunur.
+            Yaşa bağlı olarak gelişen ince çizgiler ve kırışıklıklardan kurtulmak isteyenler retinol, peptit, E
+            vitamini, makademya yağı gibi maddeleri içeren ürünleri tercih edebilir.
+
+        </p>
+
+        <br><br>
+
+        <h2>Losyon Zararlı Mı?</h2>
+
+
+        <br><br>
+        <p>
+            Vücut losyonu kullanımının bir zararı bulunmasa da ürün içeriklerine ve losyonun hangi bölge için
+            üretildiğine dikkat edilmesi faydalı olur. Çoğu kişinin cilt bakımı rutinine dahil ettiği ve günde 1-2 kez
+            kullandığı losyonlar, yüz ve vücut için farklı içeriklerle formüle edilebilir. Bunun nedeni yüzün vücuda
+            göre çok daha hassas bir deriye sahip olmasıdır. Yüze uygun ürünler leke, kırışıklık, akne gibi sorunların
+            giderilmesi amacıyla kullanılabilir. Vücut losyonları ise daha çok cildin nemlendirilmesi amacıyla tercih
+            edilir.
+        </p>
+
+        <br><br>
+
+        <h2>Vücut Losyonu Nasıl Kullanılır?</h2>
+
+
+        <br><br>
+        <p>
+            Losyon kullanımı öncesinde cildin tam olarak temizlenmesi gerekir. Ardından cilt tipine uygun olan ürün
+            önerilen miktarda vücuda uygulanır. Nazik ve dairesel hareketlerle masaj yapmak, losyonun cilde daha iyi
+            etki etmesine yardımcı olur. “Losyon nasıl kullanılır?” diye merak edenler ürünlerin kullanım zamanını da
+            araştırabilir. Losyon uygulamak için en doğru zamanlardan biri duş sonrasıdır. Cildin nemi daha iyi
+            hapsetmesi için hafif nemli cilt üzerine losyon sürülebilir. Cilt, uyumadan önce de nemi daha fazla emmeye
+            meyillidir. Pürüzsüz ve yumuşak bir cilt için yatmadan önce uygulanabilir.
+
+            Ağda, epilatör, jilet gibi epilasyon yöntemleri ölü derileri arındırdığı için tahrişi azaltmak amacıyla
+            losyon kullanılabilir. Epilasyondan sonra cildin kurumasının önüne geçer. Aynı şekilde peeling işleminden
+            sonra nem bariyerini güçlendirmek ve cildin yatışmasını sağlamak amacıyla uygulanır.
+        </p>
+
+
+    </div>
+
+    <br><br>
+
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

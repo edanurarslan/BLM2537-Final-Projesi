@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="resimler/zkusagi.png" width="50" height="400">
+        <h1>Z Kuşağı’nın Kozmetik Sektörüne Etkisi</h1>
+        <br><br>
+        <p>
+
+            Deloitte tarafından 2022 yılında Y ve Z jenerasyonları üzerine yapılan bir araştırmaya[1] göre işverenler
+            tarafından sürdürülebilir seçimlere ve çevresel eylemlere öncelik verilmesinin bu kuşak için ilk sıralarda
+            yer aldığını görüyoruz.
+
+
+
+            Z kuşağının kozmetik ürün satın alma davranışı ve eğilimlerine baktığımızda ise sürdürülebilir ve çevreye
+            etkisi az olan ürünleri ilk sırada tercih ettiklerini hatta %64’ünün çevresel açıdan sürdürülebilir olan
+            ürünlere, olmayanlara kıyasla daha fazla para ödediğini, ödemeye gönüllü olduğunu da görebiliyoruz.
+            <br><br>
+
+
+            Peki, daha çok yakın bir geçmişte bir sürü makyaj malzemesine sahip olmak, kat kat kozmetik ürünleri
+            kullanmak, harika bir makyaja sahip olmak yeterliyken Z jenerasyonu kozmetik ve güzellik sektörünü nasıl
+            etkileyecek? Nelere dikkat edecek? Neleri görmek isteyecek? Neleri görmek istemeyecek?
+            <br><br>
+
+
+            Özetle; Z kuşağı “sürdürülebilir çevre odaklı bakış açısı” ile kozmetik ve güzellik sektörünü nasıl
+            dönüştürecek? 10 maddede
+            <br><br>
+
+
+            Doğal ve Organik Ürünler: Z kuşağı tüketicileri arasında, kozmetik sektöründe gözlemlenen en önemli
+            trendlerin başında doğal ve organik ürünleri tercih etmeleri geliyor. Bu, doğal içeriklerle yapılan
+            kozmetiklere olan talebin artmasına ve yapay kimyasalların kullanımının azalmasına yol açıyor.
+            Kozmetikte Teknoloji ve Dijitalleşme: Z kusağının en önem verdiği bir diğer konu ise kozmetik sektöründe
+            teknolojinin kullanılması. Bu kuşak, son derece bağlantılı, teknoloji konusunda bilgili, çevrimiçi veya
+            sosyal medya aracılığıyla kozmetik alışverişi yapmayı tercih ediyor. Bu da sanal gerçeklik (Virtual Reality
+            – VR) teknolojisinin ve sektördeki diğer dijital araçların kullanımının artmasını sağlayacak.
+            Sanal Deneyimler: Z kuşağı sanal deneyimlere alışkındır, sanal deneme ve sanal danışmanlık arama
+            eğilimindedirler, sanal güzellik deneyimlerine açıktırlar.
+            <br><br>
+            Sürdürülebilir Çevre Dostu Ürünler: Z kuşağı tüketicileri eski nesillere göre sosyal ve çevreye daha duyarlı
+            ve ayrıca güzellik ürünleri söz konusu olduğunda sürdürülebilir ve çevre dostu seçenekler aramaya daha
+            meyilli. Kozmetik sektörünün daha sürdürülebilir ve çevre dostu ürünler sunarak yanıt vermesi gerekiyor.
+            <br><br>
+            Cinsiyet Ayrımı Gözetmeyen Ürünler: Z Kuşağı tüketicilerinin daha çeşitli ve kapsayıcı olduğu biliniyor.
+            İkili olmayan kimlikleri ve cinsiyet ayrımı gözetmeyen ürünleri daha çok kabul ediyor, belirli bir cinsiyet
+            için pazarlanmayan veya tasarlanmayan ürünleri daha çok tercih edebiliyor.
+            <br><br>
+            Kişiselleştirilmiş Ürünler: Z kuşağı bireyselliğe ve kişiselleştirmeye değer verir, kendi özel ihtiyaçlarına
+            ve tercihlerine göre hazırlanmış ürünleri arama eğilimindeler.
+            <br><br>
+            Şeffaflık: Z kuşağı meraklı bir nesil olarak satın aldıkları ürünler hakkında araştırma ve bilgi arama
+            eğiliminde olup ürünlerin içeriklerinde ve üretim süreçlerinde şeffaflık arıyorlar.
+            <br><br>
+            Sosyal Medya: İyi bir sosyal medya kullanıcısı olan Z kuşağı, ürün önerileri, incelemeleri ve kullanım
+            ilhamları için büyük ölçüde sosyal medyayı kullanıyor ve influencer ve sosyal medya kampanyalarından feyz
+            alıyor.
+
+            <br><br>
+
+            Z kuşağının demografik nüfustaki oranı arttıkça, yukarıda bahsettiğimiz maddelerdeki talepleri ve
+            beklentileri de artacak.
+
+
+
+            Bu bağlamda, markaların şimdiden çevreye ve sağlığa duyarlı ürünler üretmesi, şeffaf bir şekilde bilgileri
+            web sitelerinde ya da sosyal medya hesaplarında paylaşmaları, kapsayıcı güzellik ve kozmetik ürünleri
+            üretmeye doğru evrilmeleri ve kişiye özel ürünler sunarken teknolojiyi de müşterileriyle birlikte
+            deneyimleyecek bir şekilde dönüşmesi önemli.
+
+
+
+            Çünkü, gelecek çok hızlı gelecek. Ve gelecek, sürdürülebilir ve çevreci bir perspektifte gelecek.
+
+        </p>
+    </div>
+
+    <br><br>
+
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

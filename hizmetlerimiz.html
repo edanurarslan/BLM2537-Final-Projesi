@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container-fluid mb-3 mb-md-4">
+        <div class="container">
+            <div class="row px-3 mb-3 mb-md-4">
+                <div class="col-12 py-3">
+                    <div class="row position-relative px-0 overflow-hidden">
+                        <div class="col-11 col-md-10 mx-auto">
+                            <h1 class="canela font50 ecoblue mb-0">Hizmetlerimiz</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3 mb-3 mb-md-4">
+                <div class="col-12 aboutus-bg py-3">
+                    <div class="row position-relative px-0 overflow-hidden">
+                        <div class="col-11 col-md-10 mx-auto">
+                            <div class="row">
+                                <div class="col-12 p-3 d-flex align-items-center justify-content-between cursor active"
+                                    id="toggleMainBrands">
+                                    <div class="container mt-5">
+                                        <h2 class="text">Markalar/Firmalar için +</h2>
+                                    </div>
+                                    <i class="fas fa-minus font30 ecoblue"></i>
+                                </div>
+                                <div class="col-12 d-flex flex-column align-items-start justify-content-start transition-03"
+                                    style="max-height:10000px;overflow:hidden;" id="subBrands">
+                                    <p class="mb-3 lato font16 ecoblue w400 mt-3">Tüketiciler alışveriş yaparken satın
+                                        almak istediği ürünler hakkında artık daha fazla bilgi istiyor. Ve bunu da hemen
+                                        istiyor…</p>
+                                    <p class="mb-3 lato font16 ecoblue w400">Özellikle sosyal medyada yapılan satış
+                                        aktiviteleri ürünün sadece performansına yönelik. Maalesef performans deneyimi
+                                        de tek başına yeterli olmuyor. Müşterileriniz artık ürünlerin sağlık ve çevre
+                                        açısından da etkilerini sorguluyor. Kullandığınız ambalajın geri
+                                        dönüştürülebilir olması veya kargolama yönteminizin doğaya ne kadar saygılı
+                                        olduğuna da bakıyorlar. Hayvanlar üzerinde test yapıp yapmadığınızı veya
+                                        çevresel toksik olan ham maddelerden birini kullanıp kullanmadığınızı da merak
+                                        ediyor…</p>
+                                    <p class="mb-3 lato font16 ecoblue w400">Bu noktada, yaptığınız tüm çalışmaları ve
+                                        aktiviteleri müşterileriniz ile şeffaf ve tarafsız olarak paylaşabileceğiniz
+                                        güvenilir bir platform var.</p>
+                                    <p class="mb-3 lato font20 ecoblue w400">Eda Sağlık!</p>
+                                    <h3 class="mb-3 canela font20 ecoblue w700">Eda Sağlık olarak verdiğimiz
+                                        hizmetlerimiz:</h3>
+                                    <h4 class="mb-3 lato font20 ecoblue w400">1. Ürünlerinizin sağlık ve çevre açısından
+                                        değerlendirilmesi ve puanlandırılması:</h4>
+                                    <p class="mb-3 lato font16 ecoblue w400">Her bir ürününüzü sağlık ve çevre
+                                        etkilerine göre ayrı ayrı değerlendirerek teknik rapor hazırlıyoruz. “Eda
+                                        Sağlık Puanı” badge oluşturarak, aynı zamanda “Çevre Puanı” bilgisini de hem web
+                                        sitemizde hem de sosyal medya hesaplarımızda tüketiciler ile paylaşıyoruz. Kendi
+                                        web sitenizde de bu bilgileri ve puanları kullanabileceğiniz şekilde çalışmalar
+                                        yapıyoruz.</p>
+                                    <h4 class="mb-3 lato font20 ecoblue w400">2. Ürünlerinizin piyasaya çıkmadan önce
+                                        içerik danışmanlığının sağlanması:</h4>
+                                    <p class="mb-3 lato font16 ecoblue w400">Yeni bir ürün çıkarmadan önce her bir
+                                        ürününüzü sağlık ve çevre açısından inceleyerek, en iyi sonuca sahip ürünü
+                                        geliştirebilmeniz için danışmanlık veriyoruz. İçeriklerin puanları, birbirleri
+                                        ile etkileşimleri ve en sağlıklı ham maddelerin kullanım önerilerinin yer aldığı
+                                        teknik rapor hazırlıyoruz.</p>
+                                    <h4 class="mb-3 lato font20 ecoblue w400">3. Müşteri deneyim anketleri:</h4>
+                                    <p class="mb-3 lato font16 ecoblue w400">50 kişilik gönüllü müşteri grubumuzla
+                                        piyasada olan veya henüz piyasaya çıkmamış olan ürünlerinizi deneyip, ürün
+                                        performansı konusunda rapor hazırlıyoruz. Firmaların kendi anketlerini
+                                        kullanarak ya da talebe istinaden yeni bir anket tasarlayarak ilerliyoruz.
+                                        Farklı cinsiyet ve yaş gruplarından olan deneyim grubumuzu farklı cilt tipi, saç
+                                        tipi, lokasyon vb. taleplere göre isteğinize özel olarak tasarlayabiliyoruz.</p>
+                                    <h4 class="mb-3 lato font20 ecoblue w400">4. Firmalarla özel çalışmaların
+                                        planlanması:</h4>
+                                    <p class="mb-3 lato font16 ecoblue w400">Sürdürülebilirlik çalışmaları kapsamında
+                                        tüketicilerin farkındalığını arttırmak üzere firmalar ile birlikte çeşitli özel
+                                        çalışmalar yapıyoruz. Etiket okuma farkındalık çalışması, sosyal sorumluluk
+                                        çalışmaları, ürün-raf düzeni çalışmaları gibi.</p>
+                                    <h4 class="mb-3 lato font20 ecoblue w400">5. Mobil uygulama çalışması:</h4>
+                                    <p class="mb-3 lato font16 ecoblue w400">Online ve offline olmak üzere,
+                                        pazaryerlerinde alışveriş yapan tüketicilerin, etiket/barkod veya içerik
+                                        okutarak ürünlerin sağlık ve çevre puanlarına anında ulaşabilecekleri mobil
+                                        uygulama çalışmamız devam ediyor. Canlı kullanıma geçtiğimizde ürünlerinizi
+                                        mobil uygulamamız vasıtası ile tek bir tuşla müşterileriniz ile buluşturuyoruz.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3 mb-3 mb-md-4">
+                <div class="col-12 aboutus-bg py-3">
+                    <div class="row position-relative px-0 overflow-hidden">
+                        <div class="col-11 col-md-10 mx-auto">
+                            <div class="row">
+                                <div class="col-12 p-3 d-flex align-items-center justify-content-between cursor"
+                                    id="toggleMainCustomers">
+                                    <div class="container mt-5">
+                                        <h2 class="text">Tüketiciler için +</h2>
+                                    </div>
+                                    <i class="fas fa-plus font30 ecoblue"></i>
+                                </div>
+                                <div class="col-12 transition-03" style="max-height:0;overflow:hidden;"
+                                    id="subCustomers">
+                                    <div class="row d-flex flex-column align-items-start justify-content-start">
+                                        <p class="mb-3 lato font16 ecoblue w400 mt-3">Piyasada binlerce kozmetik ve
+                                            bakım ürünü var. Bunlardan hangisini alacağınızı bilmiyor musunuz? Ya da
+                                            sağlığınız için iyi olduğunu düşündüğünüz bir ürünün çevreye olan etkisini
+                                            merak mı ediyorsunuz?</p>
+                                        <p class="mb-3 lato font16 ecoblue w400">O halde sizi içerik inceleme ve ürün
+                                            inceleme sayfalarımıza davet ediyoruz :)</p>
+                                        <p class="mb-3 lato font16 ecoblue w400">Aradığınız ürünü bulamadınız mı? O
+                                            halde aşağıdaki formu doldurarak bize iletebilirsiniz.</p>
+                                    </div>
+
+                                    <div class="form-container">
+                                        <p>Başka hangi ürünleri incelememizi istersiniz?</p>
+                                        <form id="contact-form">
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">İsim Soyisim</label>
+                                                <input type="text" class="form-control" id="name" name="name" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">E-Posta</label>
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Telefon Numarası</label>
+                                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message" class="form-label">Ürün veya İçerik Önerisi</label>
+                                                <textarea class="form-control" id="message" name="message" rows="5"
+                                                    required></textarea>
+                                            </div>
+
+                                            <div class="col-12 d-flex align-items-center justify-content-center mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="kvkkProduct" name="kvkk" required>
+                                                    <label class="form-check-label text-light">
+                                                        <p>KVKK Aydınlatma
+                                                            Metnini ve Gizlilik
+                                                            Sözleşmesini okudum ve onaylıyorum</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary custom-btn">Gönder</button>
+                                        </form>
+
+                                        <div class="form-message" id="formMessage"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3 mb-3 mb-md-4">
+                <div class="col-12 py-3">
+                    <div class="row position-relative px-0 overflow-hidden">
+                        <div
+                            class="col-11 col-md-10 mx-auto d-flex flex-column align-items-center justify-content-center">
+                            <p class="canela font30 ecoblue mb-0 text-center">Sevgi ve Saygıyla</p>
+                            <p class="canela font30 ecoblue mb-0 text-center">Eda Sağlık</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleMainBrands = document.querySelector('#toggleMainBrands');
+        const subBrands = document.querySelector('#subBrands');
+        const toggleMainCustomers = document.querySelector('#toggleMainCustomers');
+        const subCustomers = document.querySelector('#subCustomers');
+        const contactusServices = document.querySelector('#contactusServices');
+
+        // Initially close the "Markalar/Firmalar için" section
+        toggleMainBrands.classList.remove('active');
+        toggleMainBrands.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+        subBrands.style.maxHeight = '0';
+
+        toggleMainBrands.onclick = () => {
+            if (toggleMainBrands.classList.contains('active')) {
+                toggleMainBrands.classList.remove('active');
+                toggleMainBrands.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+                subBrands.style.maxHeight = '0';
+            } else {
+                toggleMainBrands.classList.add('active');
+                toggleMainBrands.querySelector('i').classList.replace('fa-plus', 'fa-minus');
+                subBrands.style.maxHeight = '10000px';
+            }
+        }
+
+        toggleMainCustomers.onclick = () => {
+            if (toggleMainCustomers.classList.contains('active')) {
+                toggleMainCustomers.classList.remove('active');
+                toggleMainCustomers.querySelector('i').classList.replace('fa-minus', 'fa-plus');
+                subCustomers.style.maxHeight = '0';
+            } else {
+                toggleMainCustomers.classList.add('active');
+                toggleMainCustomers.querySelector('i').classList.replace('fa-plus', 'fa-minus');
+                subCustomers.style.maxHeight = '10000px';
+            }
+        }
+
+        contactusServices.onclick = () => {
+            document.querySelector('#contactusFooter').scrollIntoView();
+            document.querySelector('#contactusFooterMobile').scrollIntoView();
+        }
+    </script>
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

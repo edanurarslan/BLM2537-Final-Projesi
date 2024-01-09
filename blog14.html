@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            /* Navbar'ın içeriğin üzerine gelmesini önler */
+            background-color: #f8f9fa;
+            /* Sayfa arkaplan rengi */
+            color: rgb(55, 187, 53);
+            /* Sayfa metin rengi */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 2px -2px gray;
+            /* Hafif bir gölge efekti */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+            /* Link rengi */
+        }
+
+        h7 {
+            font-size: 18px;
+            /* Set the font size for h7 */
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        h5 {
+            font-weight: bold;
+            /* Make h7 text bold */
+        }
+
+        p {
+            color: black;
+            /* Set the text color of p to black */
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+            /* Toggle icon rengi */
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            /* Navbar link rengi */
+            transition: color 0.3s;
+            /* Renk değişimini yumuşatma */
+            margin-right: 20px;
+            /* Seçenekler arasındaki boşluğu ayarlar */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+            /* Linkin üzerine gelindiğinde renk değişimi */
+        }
+
+        .container {
+            background-color: #ffffff;
+            /* İçerik kutusu arkaplan rengi */
+            border-radius: 10px;
+            /* İçerik kutusu köşe yuvarlama */
+            padding: 20px;
+            /* İçerik kutusu iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* Başlık arasındaki boşluğu ayarlar */
+        }
+
+        img {
+            width: 100%;
+            /* Resmi container genişliğine sığdırmak */
+            margin: 20px 0;
+            /* Üst ve alt boşluk */
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            /* Formun maksimum genişliği */
+            margin: auto;
+            /* Ortalanmış form */
+            background-color: #ffffff;
+            /* Form arkaplan rengi */
+            border-radius: 10px;
+            /* Form köşe yuvarlama */
+            padding: 20px;
+            /* Form iç boşluk */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Hafif bir gölge efekti */
+            margin-top: 20px;
+            /* Formdan önceki boşluk */
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            /* Green color for the button */
+            border-color: #2ae151;
+            /* Border color */
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            /* Flexbox kullanarak içerikleri yan yana yerleştir */
+            justify-content: space-between;
+            /* Aralarında boşluk bırakarak iki container'ı hizala */
+        }
+
+
+        /* Sağa dayalı metin stilini uygula */
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+            /* İki satır arasındaki boşluğu ayarla */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="resimler/encokkonusulan.png" width="50" height="400">
+        <h1>2023 Yılında En Çok Konuşulacak 7 Kozmetik İçerik</h1>
+        <br><br>
+        <p>
+            2023 yılı güzellik endüstrisinde doğal içeriklere odaklanan bir yenilik yılı olacak. Cildi yeniden
+            yapılandırmaya, yatıştırmaya ve doğal bir şekilde cildi yenilemeye odaklanan bileşenleri kozmetik ve
+            güzellik ürünlerinde daha sık bir şekilde duymaya başlayacağız.
+            <br><br>
+            Bu yazımda; arama hacimlerine, yurt dışında yapılan araştırmalara ve kozmetik ve güzellik sektöründeki
+            yayınlanan verilere göre bu yıl karşımıza en çok çıkacak 7 bileşeni sizlerle paylaşıyorum. Bu sene popüler
+            içerikler arasında:
+            <br><br>
+            1. Sesaqua: Sesaqua, üstün nemlendirici ve parlatıcı etkileriyle bilinen susam yağından elde edilen prinadan
+            yapılan ileri dönüştürülmüş bir bileşen olmasıyla, ileri dönüştürülmüş güzellik ürünlerinde giderek daha
+            popüler hale geliyor. Cilt bakım ürünlerine yeni bir beslenme ve hidrasyon düzeyi sağlamayı vaat eden bu
+            bileşen 2023’ün güzellik trendini oldukça hareketlendirecek gibi duruyor.
+            <br><br>
+            2. Winter Cherry: Kış kirazının, cildi zararlı serbest radikallerden korumaya yardımcı olabilecek
+            antioksidan özellikleri, iltihabı azaltmaya ve cilt sağlığını iyileştirmeye yardımcı olması gibi özellikleri
+            sayesinde önümüzdeki yıllarda güzellik ürünlerinde temel bir bileşen haline gelmesi muhtemel. Ayrıca
+            yaşlılık lekelerinin, kırışıklıkların ve ince çizgilerin görünümünü iyileştirmeye yardımcı olması sebebiyle
+            de yaşlanma karşıtı ürünler için popüler bir içerik haline geliyor.
+            <br><br>
+            3. Rosemary Oil: 2023&#39;te biberiye yağını kullanmanın tüketiciler arasında giderek daha da popüler hale
+            geleceği öngörülüyor çünkü saç derisi sağlığını iyileştirmeye yardımcı olma kabiliyetinin yanı sıra saç
+            uzatma özelliklerini destekleyen kanıtlar bulunmuş. Dijital pazarlama ajansı Embryo tarafından yapılan
+            araştırmaya göre, &#34;biberiye yağı&#34; arama verileri toplamda 271 bin arama ile geçen yıla göre önemli
+            ölçüde artarak 2023 yılında trend olarak daha fazla kullanılabileceğini gösteriyor.
+            <br><br>
+            4. Linoleic Acid: Linoleik asit, 2023&#39;te popüler olacak çok yönlü cilt bakımı bileşenlerinden biri
+            olarak görülüyor. Güçlü bir cilt bariyeri oluşturmaya yardımcı olan bu yağ asidi, ayçiçeği, aspir ve soya
+            fasulyesi yağı gibi birçok yağda da doğal olarak bulunuyor. Sebum üretimini düzenlemeye, cildi nemli tutmaya
+            ve cildin çok yağlı veya çok kuru olmasını önlemeye yardımcı oluyor. Cildi aşırı güneşe maruz kalmanın
+            etkilerinden korumaya da yardımcı olabilmesi onu hassas cilde sahip olanlar için ideal bir bileşen haline
+            getiriyor.
+            <br><br>
+            5. Colostrum: Kolostrum, 2023&#39;te güzellik meraklıları arasında giderek daha da popüler hale geliyor. Bu
+            trend, inanılmaz cilt onarıcı ve yaşlanma karşıtı özelliklere sahip olduğu söylenen memeliler tarafından
+            üretilen besleyici sütten ilham alıyor. Yaygın olarak cilt bakımı ve çeşitli makyaj ürünlerinde de
+            kullanılması bekleniyor.
+            <br><br>
+            6. Algae: Alg bazlı güzellik ürünlerinin 2023&#39;teki en sıcak trendlerden biri olacağı tahmin ediliyor.
+            Cildi beslemek ve nemlendirmek için gerekli olan omega-3 yağ asitleri açısından zengin olan bu bileşen cildi
+            nemlendirmeye ve beslemeye yardımcı olurken aynı zamanda kızarıklığı ve iltihaplanmayı da azaltıyor. Cilt
+            sağlığını ve güzelliğini iyileştirmenin etkili ve doğal bir yolu olduğundan, 2023&#39;te daha fazla şirketin
+            bu süper bileşeni formülasyonlarına dahil etmesi muhtemel gözüküyor.
+            <br><br>
+            7. Snail Mucin: Salyangoz müsini, geçen ay itibariyle ayda 105.000 arama hacmiyle 2023&#39;te güzellik,
+            sağlık ve zindeliği domine edecek ilk 10 içerikten biri olarak görülüyor. Antik Yunanistan&#39;da bir
+            iltihap ilacı olduğu için bu eğilim yeni değil. Salyangoz müsini, yaşlanma karşıtı özellikleri, nemlendirici
+            faydaları, kolajen üretiminin teşviki ve cilt bakımı iyileştirme ve yenilenmesi ile biliniyor. Pek çok
+            faydalı özelliği nedeniyle giderek daha popüler hale gelen bir güzellik trendi olmaya aday.
+            <br><br>
+            Özetle, tüketiciler arasında doğal ve organik içerikler giderek daha popüler hale geliyor. Tüketiciler, cilt
+            bakımı seçimlerinin sağlık ve çevre üzerindeki etkilerini daha fazla farkına vardıkça, temiz güzellik ve
+            yeşil güzellik anlayışı sektörü giderek artan bir şekilde yönlendireceğe benziyor.
+            <br><br>
+            Daha fazla insan sürdürülebilir cilt bakımının öneminin farkına vardıkça 2023 yılı güzellik endüstrisi için
+            muhtemelen büyük bir yıl olacak gibi gözüküyor.
+        </p>
+
+
+    </div>
+    <br><br>
+
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="anasayfa.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

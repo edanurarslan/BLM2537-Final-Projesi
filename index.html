@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+            background-color: #f8f9fa;
+            color: rgb(55, 187, 53);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #16d132;
+        }
+
+        h7 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        p {
+            color: black;
+        }
+
+
+        .navbar-toggler-icon {
+            border-color: #1a9962;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(55, 76, 57);
+            transition: color 0.3s;
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #2ae151;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h4 {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-message {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        .custom-btn {
+            background-color: #2ae151;
+            border-color: #2ae151;
+        }
+
+        footer {
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer h5,
+        footer p {
+            text-align: left;
+            margin: 5px 0;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EDA SAĞLIK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="uruninceleme.html">Ürün İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icerikinceleme.html">İçerik İnceleme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="puanlama.html">Puanlama Sistemimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bizeulasin.html">Bize Ulaşın</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container mt-5">
+
+        <h4 class="text-center">TARAFSIZ, ŞEFFAF VE BİLİMSEL OLARAK <br>
+            ÜRÜN VE İÇERİKLERİ İNCELİYOR VE PUANLIYORUZ.
+        </h4>
+        <div class="row text-center">
+            <div class="col">
+                <h5>30 Ürün İnceleme</h5>
+            </div>
+            <div class="col">
+                <h5>30 İçerik İnceleme</h5>
+            </div>
+            <div class="col">
+                <h5>15 Blog Yazısı</h5>
+            </div>
+        </div>
+    </div>
+
+    <img src="resimler/anasayfafoto.png" width="1500" height="400">
+
+    <div class="container mt-5">
+        <h4 class="text-center">EN MERAK EDİLEN ÜRÜNLER</h5>
+            <div class="row text-center">
+                <div class="col">
+                    <h7>Gladsture Aktif Karbon ve Çay Ağacı Yağlı Doğal Sabun 120g</h7>
+                    <img src="resimler/gladsture.png" width="50" height="250">
+                </div>
+                <div class="col">
+                    <h7>Jijvisha Brightening Soothing Serum</h7>
+                    <br>
+                    <br>
+                    <img src="resimler/jijivisha.png" width="50" height="250">
+                </div>
+                <div class="col">
+                    <h7>T-Brush Çilek Aromalı Diş Macunu Tableti - Florsüz</h7>
+                    <br>
+                    <img src="resimler/tbrush.png" width="50" height="250">
+                </div>
+
+                <div class="col">
+                    <h7>Gülbenatural Lavanta Özlü Vücut Peeling</h7>
+                    <br>
+                    <br>
+                    <img src="resimler/gülbenatural.png" width="50" height="250">
+                </div>
+
+                <div class="col">
+                    <h7>Dax Mix-up Sulphur</h7>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="resimler/sulphur.png" width="50" height="250">
+                </div>
+            </div>
+    </div>
+
+    <div class="container mt-5">
+        <h4 class="text-center">EN MERAK EDİLEN İÇERİKLER</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">İçerik Adı Orijinal</th>
+                    <th scope="col">İçerik Adı Türkçe</th>
+                    <th scope="col" colspan="2">Nedir, Ne İşe Yarar?</th>
+                    <th scope="col">Sağlık Puanı</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fructose</td>
+                    <td>Früktoz</td>
+                    <td colspan="2">Fruktoz birçok besin maddesinde bulunan altı karbonlu
+                        bir monosakkarit yapılı şekerdir..
+                    </td>
+                    <td>İyi</td>
+                </tr>
+                <tr>
+                    <td>Inulin</td>
+                    <td>İnülin</td>
+                    <td colspan="2">İnülin, prebiyotik ve potansiyel antikanser aktiviteye
+                        sahip belirli bitkilerin kökleri tarafından...
+                    </td>
+                    <td>İyi</td>
+                </tr>
+                <tr>
+                    <td>Aqua</td>
+                    <td>Su</td>
+                    <td colspan="2">Kozmetik ürünlerde en fazla kullanılan bileşendir.
+                        Aqua, su olarak bilinir ve çeşitli kozmetik ve...
+                    </td>
+                    <td>İyi</td>
+                </tr>
+                <tr>
+                    <td>Tapioca Starch</td>
+                    <td>Tapiyoka Nişastası</td>
+                    <td colspan="2">Tapiyoka nişastası Cassava çalısının köklerinden elde
+                        edilen doğal bir kıvam arttırıcı ve doku...
+                    </td>
+                    <td>İyi</td>
+                </tr>
+                <tr>
+                    <td>CI 75470</td>
+                    <td>CI 75470; Carmine</td>
+                    <td colspan="2">Carmine; parlak, çilek kırmızısı bir ton veren doğal bir
+                        pigmenttir. ABD'de göz çevresinde...
+                    </td>
+                    <td>İyi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="container mt-5">
+        <h4 class="text-center">EN ÇOK OKUNAN BLOG YAZILARI</h5>
+            <div class="row text-center">
+                <div class="col">
+                    <img src="resimler/arbutin.png" width="80" height="250">
+                    <a href="blog1.html">Arbutin Nedir?</a>
+                    <p>Siyah nokta ve leke oluşumu gibi nedenler cildin kötü görünmesine
+                        yol açar. Bu tarz cilt kusurları...
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="resimler/kırmızıpeel.png" width="80" height="250">
+                    <a href="blog2.html">Kırmızı Peeling Nedir?</a>
+                    <p>"Peeling nedir?" sorusu birçok kişi tarafından sıklıkla sorulur.
+                        Peeling fiziksel veya...
+                    </p>
+                    </h7>
+                </div>
+                <div class="col">
+                    <img src="resimler/losyon.png" width="80" height="250">
+                    <a href="blog3.html">Losyon Nedir?</a>
+                    <p> Yeterli bakım sağlanamadığında nemini kaybeden
+                        ve kuruyan cilt için özel ürünler... </p>
+                </div>
+
+                <div class="col">
+                    <img src="resimler/ciltbakım.png" width="80" height="250">
+                    <a href="blog4.html">Cilt Bakımında Kullanılan Asitler Nelerdir?</a>
+                    <p>Cilt bakımında asit kullanımı ilk başta kulağa biraz sıra dışı
+                        gelse de doğru bir...
+                    </p>
+                </div>
+
+                <div class="col">
+                    <img src="resimler/ahabha.png" width="80" height="250">
+                    <a href="blog5.html">AHA BHA Nedir?</a>
+                    <p>AHA ve BHA asitleri son zamanlarda pek çok kişi
+                        tarafından cilt bakım rutininin bir parçası...
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="form-container">
+        <form id="contact-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">İsim Soyisim</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-Posta</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefon Numarası</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="requestType" class="form-label">İnceleme Talebi</label>
+                <select class="form-select" id="requestType" name="requestType" required>
+                    <option value="" disabled selected>Lütfen seçiniz</option>
+                    <option value="product">Ürün İnceleme</option>
+                    <option value="content">İçerik İnceleme</option>
+                    <option value="blog">Blog Yazısı</option>
+                </select>
+            </div>
+            <div class="mb-3" id="blogTopicContainer" style="display: none;">
+                <label for="blogTopic" class="form-label">Blog Konusu</label>
+                <input type="text" class="form-control" id="blogTopic" name="blogTopic">
+            </div>
+
+            <div class="mb-3" id="contentTopicContainer" style="display: none;">
+                <label for="contentTopic" class="form-label">İçerik</label>
+                <input type="text" class="form-control" id="contentTopic" name="contentTopic">
+            </div>
+
+            <div class="mb-3" id="productTopicContainer" style="display: none;">
+                <label for="productTopic" class="form-label">Ürün</label>
+                <input type="text" class="form-control" id="productTopic" name="productTopic">
+            </div>
+
+            <button type="submit" class="btn btn-primary custom-btn">Gönder</button>
+        </form>
+
+        <div class="form-message" id="formMessage"></div>
+    </div>
+
+    <br><br><br>
+
+    <footer
+        style="background-color: #1c9335; padding: 10px; bottom: 0; width: 100%; display: flex; justify-content: space-between; color: white;">
+
+        <div class="col">
+            <div class="row">
+                <h5>BİZE ULAŞIN!</h5>
+            </div>
+            <div class="row">
+                <p>E-POSTA : edasaglik@gmail.com</p>
+            </div>
+            <div class="row">
+                <p>INSTAGRAM : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>LinkedIn : Eda Sağlık</p>
+            </div>
+            <div class="row">
+                <p>TikTok : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Youtube : @edasaglik</p>
+            </div>
+            <div class="row">
+                <p>Adres : Ankara</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <h5>İÇERİKLER</h5>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="index.html" style="color: white;">Anasayfa</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hakkimizda.html" style="color: white;">Hakkımızda</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="uruninceleme.html" style="color: white;">Ürün İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="icerikinceleme.html" style="color: white;">İçerik İnceleme</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="hizmetlerimiz.html" style="color: white;">Hizmetlerimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="puanlama.html" style="color: white;">Puanlama Sistemimiz</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+            </div>
+            <div class="row">
+                <a class="nav-link" href="bizeulasin.html" style="color: white;">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.getElementById('requestType').addEventListener('change', function () {
+            var blogTopicContainer = document.getElementById('blogTopicContainer');
+            var blogTopicInput = document.getElementById('blogTopic');
+
+            var contentTopicContainer = document.getElementById('contentTopicContainer');
+            var contentTopicInput = document.getElementById('contentTopic');
+
+            var productTopicContainer = document.getElementById('productTopicContainer');
+            var productTopicInput = document.getElementById('productTopic');
+
+            if (this.value === 'blog') {
+                blogTopicContainer.style.display = 'block';
+                blogTopicInput.required = true;
+
+                contentTopicContainer.style.display = 'none';
+                contentTopicInput.required = false;
+
+                productTopicContainer.style.display = 'none';
+                productTopicInput.required = false;
+            } else if (this.value === 'content') {
+                blogTopicContainer.style.display = 'none';
+                blogTopicInput.required = false;
+
+                contentTopicContainer.style.display = 'block';
+                contentTopicInput.required = true;
+
+                productTopicContainer.style.display = 'none';
+                productTopicInput.required = false;
+            } else if (this.value === 'product') {
+                blogTopicContainer.style.display = 'none';
+                blogTopicInput.required = false;
+
+                contentTopicContainer.style.display = 'none';
+                contentTopicInput.required = false;
+
+                productTopicContainer.style.display = 'block';
+                productTopicInput.required = true;
+            } else {
+    
+                blogTopicContainer.style.display = 'none';
+                blogTopicInput.required = false;
+
+                contentTopicContainer.style.display = 'none';
+                contentTopicInput.required = false;
+
+                productTopicContainer.style.display = 'none';
+                productTopicInput.required = false;
+            }
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+
+            document.getElementById('formMessage').innerText = 'Talebiniz alınmıştır. Teşekkür ederiz!';
+        });
+    </script>
+
+
+</body>
+
+</html>
